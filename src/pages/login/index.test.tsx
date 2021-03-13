@@ -1,5 +1,6 @@
-import LoginPage from './index'
 import { shallow } from 'enzyme'
+
+import LoginPage from './index'
 
 
 describe('test LoginPage', () => {
