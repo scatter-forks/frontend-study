@@ -5,6 +5,7 @@ module.exports = {
     transform: {
       '^.+\\.js$': 'babel-jest',
       '^.+\\.svg$': 'jest-svg-transformer',
+      '^.+\\.tsx?$': 'ts-jest',
       '.+\\.(css|styl|less|sass|scss|ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
         'jest-css-modules-transform',
     },
