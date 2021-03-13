@@ -1,10 +1,6 @@
-import React from 'react'
-interface Props {
-}
-interface State {   
-}
+import {Component} from 'react'
 
-export default class LoginPage extends React.Component<Props, State> {
+class LoginPage extends Component {
     render() {
         return (
             <div>
@@ -13,4 +9,6 @@ export default class LoginPage extends React.Component<Props, State> {
         )
     }
 }
+
+export default LoginPage
 
