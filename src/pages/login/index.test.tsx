@@ -1,6 +1,8 @@
-import { shallow } from 'enzyme'
-import LoginPage from './index'
 import React from 'react'
+
+import { shallow } from 'enzyme'
+
+import LoginPage from './index'
 
 describe('test LoginPage', () => {
     let props: any
