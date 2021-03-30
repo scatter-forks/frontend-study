@@ -1,8 +1,6 @@
 import { shallow } from 'enzyme'
 import LoginPage from './index'
-const { configure } = require('enzyme')
-const Adapter = require('enzyme-adapter-react-16')
-configure({ adapter: new Adapter() })
+import React from 'react'
 
 describe('test LoginPage', () => {
     let props: any
@@ -13,9 +11,9 @@ describe('test LoginPage', () => {
             }
         }
     })
-    
+
     it('snapshot', () => {
-        const wrapper = shallow(<LoginPage {...props}/>)
+        const wrapper = shallow(<LoginPage {...props} />)
         expect(wrapper).toMatchSnapshot()
     })
 })

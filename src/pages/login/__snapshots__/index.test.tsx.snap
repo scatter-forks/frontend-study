@@ -1,3 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test LoginPage snapshot 1`] = `ShallowWrapper {}`;
+exports[`test LoginPage snapshot 1`] = `
+<div
+  className="flex justify-center flex-col"
+>
+  <h1
+    className="text-3xl text-center my-6"
+  >
+    please input your name
+  </h1>
+  <button
+    className="w-1/4 mx-auto rounded-md py-3 px-6 bg-blue-100"
+    onClick={[Function]}
+  >
+    click here jump to next page
+  </button>
+</div>
+`;

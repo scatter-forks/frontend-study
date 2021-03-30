@@ -1,18 +1,18 @@
-import {Component} from 'react'
+import React, { Component } from 'react'
 import { History } from 'history'
 
 interface Props {
-  history: History
+    history: History
 }
 
-interface State {}
+interface State { }
 
 class LoginPage extends Component<Props, State> {
     onClick = () => {
-      const { history } = this.props
+        const { history } = this.props
         history.push('/welcome')
     }
-    
+
     render() {
         return (
             <div className="flex justify-center flex-col">
