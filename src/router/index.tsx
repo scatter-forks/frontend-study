@@ -1,7 +1,8 @@
 import LoginPage from '../pages/login'
 import Welcome from '../pages/welcome'
-import {pagePaths} from '../types/constants'
-import {IRoute} from '../types/router'
+import { pagePaths } from '../types/constants'
+import { IRoute } from '../types/router'
+import HomePage from 'src/pages/home-page'
 
 export interface RouteConfig {
   path: string
@@ -20,6 +21,10 @@ export const routes: RouteConfig[] = [
   {
     path: pagePaths.welcome,
     component: Welcome,
+  },
+  {
+    path: pagePaths.homePage,
+    component: HomePage,
   },
 ]
 

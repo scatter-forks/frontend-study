@@ -1,4 +1,5 @@
 export const pagePaths = {
   loginPage: '/',
-  welcome: '/welcome'
+  welcome: '/welcome',
+  homePage: '/home'
 }
