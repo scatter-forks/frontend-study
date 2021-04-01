@@ -5,7 +5,7 @@ export default class HomePage
   extends Component {
   render() {
     return (
-      <div className="px-96 py-10">
+      <div className="py-10">
         <div className="">
           <header>
             <div className="info">
@@ -39,7 +39,7 @@ export default class HomePage
               <Divider className='mt-1 bg-black' style={{ height: '1px' }} />
               <div className="skill-detail mt-2 pl-2 text-sm">
                 <li className="inline-block font-semibold">◾&ensp;编程语言:&emsp;</li>
-                <span className="inline-block">JavaScript, React, Java</span>
+                <span className="inline-block">Javascript, React, Java</span>
               </div>
               <div className="skill-detail mt-2 pl-2 text-sm">
                 <li className="inline-block font-semibold">◾&ensp;英文:&emsp;</li>
@@ -47,7 +47,7 @@ export default class HomePage
               </div>
               <div className="skill-detail mt-2 pl-2 text-sm">
                 <li className="inline-block font-semibold">◾&ensp;知识体系:&emsp;</li>
-                <span className="inline-block">熟悉常用的数据结构和常用算法，熟悉React开发，后端三层架构，了解DDD/BFF</span>
+                <span className="inline-block">熟悉常用的数据结构和算法，熟悉React开发，后端三层架构，了解DDD/BFF</span>
               </div>
             </div>
             <div className="experience mt-8">
@@ -66,10 +66,11 @@ export default class HomePage
                 <span className="inline-block pl-16 ml-1">
                   ◾&ensp;该项目为澳门Melco公司所有，DCT team 在开发过程中，还需要与Melco内部，欧洲，等多个vender一起合作开发。
                   <br />
-                  ◾&ensp;DCT team负责Melco后台Portal的业务开发，包括：为Melco APP提供数据，为Redemption APP提供数据，
-                  APP消息推送与后台管理，积分兑换与后台管理，优惠券发放与后台管理，优惠券核销APP开发与后台管理等。
+                  ◾&ensp;DCT team负责Melco后台Portal的业务开发，包括：Melco APP消息推送与后台管理，积分兑换与后台管理，
+                  优惠券发放与后台管理，Redemption优惠券核销APP开发与后台管理等。
                   <br />
-                  ◾&ensp;由于项目涉及多个微服务，所以使用BFF进行管理，为前端提供定制化数据，同时使用Kubernetes监控服务运行状态与服务log信息，使用Kibana进行日志分析。
+                  ◾&ensp;由于项目涉及多个微服务，所以使用BFF进行管理，为前端提供定制化数据；在每个微服务中使用DDD和六边形架构进行开发；
+                  同时使用Kubernetes进行服务部署与监控；使用CI/CD持续集成和持续交付。
                 </span>
               </div>
               <div className="experience-detail text-sm pt-1">
@@ -99,7 +100,7 @@ export default class HomePage
             <Divider className='mt-1 bg-black' style={{ height: '1px' }} />
             <span className="evaluate-detail text-sm">&emsp;◾&ensp;对技术有自己的热情，乐于分享</span>
             <br />
-            <span className="evaluate-detail text-sm">&emsp;◾&ensp;有自我驱动力，乐观向上，肯吃苦</span>
+            <span className="evaluate-detail text-sm">&emsp;◾&ensp;有自我驱动力，乐观向上，有抗压能力</span>
             <br />
             <span className="evaluate-detail text-sm">&emsp;◾&ensp;热爱运动：羽毛球、乒乓球</span>
           </footer>
