@@ -25,7 +25,6 @@ class Welcome extends Component<Props, State> {
         <h3 className="app">222</h3>
         <button onClick={this.handleGoBack} className="w-1/4 mx-auto rounded-md py-3 px-6 bg-blue-100">click here go back</button>
         <button onClick={this.handleGoHome} className="w-1/4 mx-auto my-10 rounded-md py-3 px-6 bg-blue-100">click here go home</button>
-
       </div>
     )
   }
