@@ -25,19 +25,28 @@ module.exports = override(
     // 修改 sass 配置 ，规则 loader 在第五项(具体看配置)
     config.mode = 'development'
     const loaders = config.module.rules.find(rule => Array.isArray(rule.oneOf)).oneOf;
+
     loaders.push({
       test: '/\.(ts|tsx)$',
       use: ['ts-loader'],
       exclude: /node_modules/
     })
+
+    loaders.push({
+      test: '/\.(eot|woff2|woff|ttf|svg)$',
+      use: ['file-loader'],
+    })
+
     loaders[4].exclude = /node_modules/
     loaders[4].use.loader = ['style-loader', 'css-loader']
+
     loaders[6].use.push({
       loader: 'sass-resources-loader',
       options: {
         resources: './src/assets/scss/main.scss'//全局引入公共的scss 文件(这里注意要用具体地址)
       }
     })
+
     return config
   }
 )
