@@ -89,6 +89,25 @@ exports[`test for home page snapshot test 1`] = `
           >
             电子信息与通信学院  硕士研究生
           </span>
+          <div
+            className="edu-lasted mt-2 flex justify-between"
+          >
+            <span
+              className="font-medium"
+            >
+              郑州轻工业大学  郑州
+            </span>
+            <span
+              className="font-medium"
+            >
+              2014 – 2018
+            </span>
+          </div>
+          <span
+            className="text-sm"
+          >
+            电子信息工程学院  学士
+          </span>
         </div>
       </div>
       <div
@@ -146,7 +165,7 @@ exports[`test for home page snapshot test 1`] = `
           <span
             className="inline-block"
           >
-            熟悉常用的数据结构和算法，熟悉React开发，后端三层架构，了解DDD/BFF
+            熟悉常用的数据结构和算法，熟悉React开发，后端三层架构，敏捷开发，了解DDD/BFF
           </span>
         </div>
       </div>
@@ -177,7 +196,7 @@ exports[`test for home page snapshot test 1`] = `
           <span
             className="font-medium"
           >
-            2020.10 – 2021.3
+            2020.10 – 2021.4
           </span>
         </div>
         <div
@@ -245,11 +264,11 @@ exports[`test for home page snapshot test 1`] = `
           </span>
           <br />
           <span>
-                 ◾ 前端：React, Redux, React Router, Webpack, Lodash, Antd, Enzyme, Jest
+                 ◾ 前端：React, Typescript, Redux, React Router, Webpack, Lodash, Antd, Enzyme, Jest
           </span>
           <br />
           <span>
-                 ◾ 后端：Java, Kotlin, Junit, Spring task, Docker
+                 ◾ 后端：Java, Kotlin, Junit, Quartz, Docker
           </span>
           <br />
           <span>

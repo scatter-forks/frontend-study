@@ -32,6 +32,11 @@ export default class HomePage
                   <span className="font-medium">2018 – 2020</span>
                 </div>
                 <span className="text-sm">电子信息与通信学院 &emsp;硕士研究生</span>
+                <div className="edu-lasted mt-2 flex justify-between">
+                  <span className="font-medium">郑州轻工业大学 &emsp;郑州</span>
+                  <span className="font-medium">2014 – 2018</span>
+                </div>
+                <span className="text-sm">电子信息工程学院 &emsp;学士</span>
               </div>
             </div>
             <div className="skill mt-8">
@@ -47,7 +52,7 @@ export default class HomePage
               </div>
               <div className="skill-detail mt-2 pl-2 text-sm">
                 <li className="inline-block font-semibold">◾&ensp;知识体系:&emsp;</li>
-                <span className="inline-block">熟悉常用的数据结构和算法，熟悉React开发，后端三层架构，了解DDD/BFF</span>
+                <span className="inline-block">熟悉常用的数据结构和算法，熟悉React开发，后端三层架构，敏捷开发，了解DDD/BFF</span>
               </div>
             </div>
             <div className="experience mt-8">
@@ -55,7 +60,7 @@ export default class HomePage
               <Divider className='mt-1 bg-black' style={{ height: '1px' }} />
               <div className="experience-lasted mt-2 flex justify-between">
                 <span className="font-medium">ThoughtWorks</span>
-                <span className="font-medium">2020.10 – 2021.3</span>
+                <span className="font-medium">2020.10 – 2021.4</span>
               </div>
               <div className="experience-detail text-sm pt-2">
                 <span className="text-sm font-medium">工作项目：</span>
@@ -87,9 +92,9 @@ export default class HomePage
               <div className="experience-detail text-sm pt-1">
                 <span className="text-sm font-medium">技术框架：</span>
                 <br />
-                <span>&emsp;&emsp;&emsp;&emsp;&emsp;◾&ensp;前端：React, Redux, React Router, Webpack, Lodash, Antd, Enzyme, Jest</span>
+                <span>&emsp;&emsp;&emsp;&emsp;&emsp;◾&ensp;前端：React, Typescript, Redux, React Router, Webpack, Lodash, Antd, Enzyme, Jest</span>
                 <br />
-                <span>&emsp;&emsp;&emsp;&emsp;&emsp;◾&ensp;后端：Java, Kotlin, Junit, Spring task, Docker</span>
+                <span>&emsp;&emsp;&emsp;&emsp;&emsp;◾&ensp;后端：Java, Kotlin, Junit, Quartz, Docker</span>
                 <br />
                 <span>&emsp;&emsp;&emsp;&emsp;&emsp;◾&ensp;IOS APP：React Native</span>
               </div>

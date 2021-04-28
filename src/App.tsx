@@ -8,7 +8,7 @@ const App = () => {
     <Router>
       <Switch>
         {routes.map((route: any) =>
-          <Route path={route.path} exact component={route.component} />)
+          <Route key={route.path} path={route.path} exact component={route.component} />)
         }
       </Switch>
     </Router>
