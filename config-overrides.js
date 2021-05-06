@@ -1,21 +1,27 @@
-const { override, addPostcssPlugins } = require('customize-cra')
+const { override, addPostcssPlugins, fixBabelImports, addLessLoader } = require('customize-cra')
 
 module.exports = override(
+  fixBabelImports('import', {
+    libraryName: 'antd',
+    libraryDirectory: 'es',
+    style: true,
+  }),
+  addLessLoader({
+    // less-loader 6.0 以上是lessOptions 以下是options
+    lessOptions: {
+      strictMath: false,
+      javascriptEnabled: true,
+      modifyVars: {
+        '@primary-color': '#255DE9'
+      }
+    },
+  }),
   // 这里是引入tailwindcss
   addPostcssPlugins([
     require('tailwindcss'),
     require('autoprefixer')
   ]),
-  // adjustStyleLoaders(rule => {
-  //     if (rule.test.toString().includes("scss")) { //这里是因为找到的是.module.scss test
-  //         rule.use.push({
-  //         loader: require.resolve("sass-resources-loader"),
-  //         // options: {
-  //         //     resources: "./src/assets/scss/main.scss" 
-  //         // }
-  //         });
-  //     }
-  // })
+
 
   (config) => {
     //可以暴露webpack的配置 config ,evn
@@ -24,7 +30,7 @@ module.exports = override(
     // 即：config.module.rules[2].oneof  (如果不是，具体可以打印 一下是第几项目)
     // 修改 sass 配置 ，规则 loader 在第五项(具体看配置)
     config.mode = 'development'
-    const loaders = config.module.rules.find(rule => Array.isArray(rule.oneOf)).oneOf;
+    const loaders = config.module.rules.find(rule => Array.isArray(rule.oneOf)).oneOf
 
     loaders.push({
       test: '/\.(ts|tsx)$',

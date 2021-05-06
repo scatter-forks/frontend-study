@@ -23,8 +23,10 @@ exports[`test LoginPage snapshot 1`] = `
         />
         <input
           className="w-3/4 mx-auto outline-none border-b-2"
+          onChange={[Function]}
           placeholder="Enter your username"
           type="text"
+          value=""
         />
       </div>
       <div
@@ -35,16 +37,20 @@ exports[`test LoginPage snapshot 1`] = `
         />
         <input
           className="w-3/4 mx-auto outline-none border-b-2"
+          onChange={[Function]}
           placeholder="Enter your password"
           type="password"
+          value=""
         />
       </div>
     </div>
-    <Button
-      className="flex justify-center focus:outline-none rounded-lg mx-auto mt-12 w-1/2 bg-blue-200"
+    <button
+      className="aa flex justify-center transform hover:scale-110 duration-300 transition py-1 focus:outline-none rounded-lg mx-auto mt-12 w-1/2 bg-blue-200"
+      disabled={false}
+      onClick={[Function]}
     >
       Sign In
-    </Button>
+    </button>
     <span
       className="switch-page-state flex justify-center cursor-pointer text-xs mt-5 text-blue-500"
       onClick={[Function]}
