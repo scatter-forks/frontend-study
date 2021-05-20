@@ -106,7 +106,7 @@ class LoginPage extends Component<Props, State> {
 						</div>
 					</div>
 					<button
-						className="aa flex justify-center transform hover:scale-110 duration-300 transition py-1 focus:outline-none rounded-lg mx-auto mt-12 w-1/2 bg-blue-200"
+						className="flex justify-center transform hover:scale-110 duration-300 transition py-1 focus:outline-none rounded-lg mx-auto mt-12 w-1/2 bg-blue-200"
 						disabled={isAccountInfoComplete}
 						onClick={this.handleLogin}
 					>

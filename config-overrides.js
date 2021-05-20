@@ -1,4 +1,5 @@
 const { override, addPostcssPlugins, fixBabelImports, addLessLoader } = require('customize-cra')
+const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
 module.exports = override(
   fixBabelImports('import', {
@@ -24,20 +25,30 @@ module.exports = override(
 
 
   (config) => {
+    config.devtool = false
     //可以暴露webpack的配置 config ,evn
     //1.修改、添加loader 配置 :
     // 所有的loaders规则是在config.module.rules(数组)的第二项
     // 即：config.module.rules[2].oneof  (如果不是，具体可以打印 一下是第几项目)
     // 修改 sass 配置 ，规则 loader 在第五项(具体看配置)
-    config.mode = 'development'
     const loaders = config.module.rules.find(rule => Array.isArray(rule.oneOf)).oneOf
 
     loaders.push({
       test: '/\.(ts|tsx)$',
-      use: ['ts-loader'],
-      exclude: /node_modules/
+      exclude: /node_modules/,
+      use: [
+        // ... other loaders
+        {
+          loader: require.resolve('ts-loader'),
+          options: {
+            plugins: [
+              // ... other plugins
+              require('react-refresh-typescript'),
+            ]
+          },
+        },
+      ],
     })
-
     loaders.push({
       test: '/\.(eot|woff2|woff|ttf|svg)$',
       use: ['file-loader'],
@@ -53,6 +64,9 @@ module.exports = override(
       }
     })
 
+    config.plugins.push(
+      new ReactRefreshPlugin()
+    )
     return config
   }
 )
