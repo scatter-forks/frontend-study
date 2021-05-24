@@ -1,6 +1,6 @@
 module.exports = {
   roots: ['<rootDir>/src'],
-  setupFiles: ['<rootDir>/setupTests.js'],
+  setupFiles: ['<rootDir>/src/setupTests.ts'],
   snapshotSerializers: ["enzyme-to-json/serializer"],
   transform: {
     '^.+\\.js$': 'babel-jest',
