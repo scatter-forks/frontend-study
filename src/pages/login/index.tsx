@@ -31,6 +31,8 @@ class LoginPage extends Component<Props, State> {
 	handleLogin = () => {
 		message.loading('Loging...', 2.5).then(() => {
 			message.success('Success')
+		}).then(() => {
+			this.props.history.push('/welcome')
 		})
 	}
 

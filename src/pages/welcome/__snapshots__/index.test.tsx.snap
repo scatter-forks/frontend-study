@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test welcome snapshot test 1`] = `
+<Layout>
+  <Sider
+    className="main-sider"
+  >
+    <div
+      className="logo flex justify-center text-white text-xl my-2"
+    >
+      <span
+        className="bg-yellow-400 px-4 py-2 rounded-lg"
+      >
+        Better Compare
+      </span>
+    </div>
+    <Menu
+      defaultSelectedKeys={
+        Array [
+          "1",
+        ]
+      }
+      mode="inline"
+      theme="light"
+    >
+      <MenuItem
+        icon={<ForwardRef(UserOutlined) />}
+        key="1"
+      >
+        nav 1
+      </MenuItem>
+      <MenuItem
+        icon={<ForwardRef(VideoCameraOutlined) />}
+        key="2"
+      >
+        nav 2
+      </MenuItem>
+      <MenuItem
+        icon={<ForwardRef(UploadOutlined) />}
+        key="3"
+      >
+        nav 3
+      </MenuItem>
+      <MenuItem
+        icon={<ForwardRef(BarChartOutlined) />}
+        key="4"
+      >
+        nav 4
+      </MenuItem>
+      <MenuItem
+        icon={<ForwardRef(CloudOutlined) />}
+        key="5"
+      >
+        nav 5
+      </MenuItem>
+      <MenuItem
+        icon={<ForwardRef(AppstoreOutlined) />}
+        key="6"
+      >
+        nav 6
+      </MenuItem>
+      <MenuItem
+        icon={<ForwardRef(TeamOutlined) />}
+        key="7"
+      >
+        nav 7
+      </MenuItem>
+      <MenuItem
+        icon={<ForwardRef(ShopOutlined) />}
+        key="8"
+      >
+        nav 8
+      </MenuItem>
+    </Menu>
+  </Sider>
+  <Layout
+    className="site-layout"
+    style={
+      Object {
+        "marginLeft": 200,
+      }
+    }
+  >
+    <Header
+      className="site-layout-background main-context-header font-serif text-xl"
+    >
+      一起去流浪~
+    </Header>
+    <Content
+      className="main-context"
+    >
+      <div
+        className="site-layout-background main-context-body"
+      >
+        ...
+        <br />
+        Really
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        long
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        ...
+        <br />
+        content
+      </div>
+    </Content>
+    <Footer
+      className="main-footer"
+    >
+      Compare Better ©2021 Created by Scatter
+    </Footer>
+  </Layout>
+</Layout>
+`;
