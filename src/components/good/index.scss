@@ -1,0 +1,35 @@
+.good {
+  display: inline-block;
+  width: 18%;
+  height: 260px;
+  border: 1px solid #f0f2f5;
+  box-shadow: 5px 5px 2px 2px #888888;
+}
+
+.good-picture {
+  height: 120px;
+  background-color: #D1D5DB;
+
+  .img {
+    height: 100%;
+    margin: auto auto;
+  }
+}
+
+.good-detail {
+  font-family: 'Open Sans', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  height: 100px;
+  margin-top: 10px;
+
+  .good-title {
+    color: #666;
+  }
+}
+
+.ant-image-preview-img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+}
